@@ -1,0 +1,36 @@
+{
+  "name": "foshol-lens",
+  "version": "0.1.0",
+  "private": true,
+  "description": "FosholLens - Bangla crop advisory with LLM narrative, weather-aware spray window, and local speech",
+  "license": "MIT",
+  "workspaces": [
+    "apps/frontend",
+    "packages/*"
+  ],
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "dev": "npm run dev:api & npm run dev:contracts & npm run dev:frontend",
+    "dev:contracts": "npm run dev --workspace @foshol-lens/contracts",
+    "dev:frontend": "npm run dev --workspace @foshol-lens/frontend",
+    "dev:api": "bash scripts/free-port.sh 4000 && cd apps/api && .venv/bin/uvicorn app.main:app --reload --port 4000",
+    "build": "npm run build --workspace @foshol-lens/contracts && npm run build --workspace @foshol-lens/frontend",
+    "build:contracts": "npm run build --workspace @foshol-lens/contracts",
+    "build:frontend": "npm run build --workspace @foshol-lens/frontend",
+    "typecheck": "npm run typecheck --workspace @foshol-lens/contracts && npm run typecheck --workspace @foshol-lens/frontend",
+    "test": "npm run test --workspace @foshol-lens/contracts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "clean": "rm -rf node_modules apps/frontend/node_modules packages/*/node_modules apps/frontend/dist packages/*/dist *.tsbuildinfo apps/*/*.tsbuildinfo packages/*/*.tsbuildinfo",
+    "dev:all": "npm run dev:api & npm run dev:contracts & npm run dev:frontend",
+    "free-ports": "bash scripts/free-port.sh 4000 && bash scripts/free-port.sh 5173"
+  },
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true
+  }
+}

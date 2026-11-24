@@ -1,0 +1,376 @@
+[
+  {
+    "chunk_id": "bari_potato_early_blight_01",
+    "disease_id": "potato_early_blight",
+    "aliases": [
+      "Potato___Early_Blight",
+      "early blight",
+      "alternaria solani",
+      "আলুর আগাম ধসা"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "আলুর আগাম ধসা রোগ — লক্ষণ ও পরিচর্যা",
+    "title_bn": "আলুর আগাম ধসা রোগের লক্ষণ ও দমন পরিচর্যা",
+    "content_en": "BARI Krishi Projukti Hatboi (Potato Early Blight - Alternaria solani): Dark brown circular spots with concentric target-board rings appear first on older lower leaves, turning leaves yellow and causing premature defoliation. Cultural management: remove and destroy infected lower leaves, avoid overhead irrigation in the evening, maintain balanced NPK fertilization, ensure proper furrow drainage, and practice crop rotation.",
+    "content_bn": "গাছের নিচের পুরনো পাতায় বাদামি রঙের গোল দাগ দেখা যায় এবং দাগের ভেতরে গোল চাকার মতো একাধিক রিং থাকে। ধীরে ধীরে পাতা হলুদ হয়ে শুকিয়ে ঝরে পড়ে। দমনের জন্য শুরুতেই আক্রান্ত নিচের পাতা তুলে ধ্বংস করুন, জমিতে জমে থাকা পানি নিষ্কাশনের ব্যবস্থা রাখুন, সুষম সার ব্যবহার করুন এবং ফসল আবর্তন মেনে চলুন।",
+    "cultural_only": false,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "bari_potato_early_blight_02",
+    "disease_id": "potato_early_blight",
+    "aliases": [
+      "Potato___Early_Blight",
+      "early blight",
+      "alternaria solani",
+      "আলুর আগাম ধসা"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "আলুর আগাম ধসা রোগ — অনুমোদিত ছত্রাকনাশক ও মাত্রা",
+    "title_bn": "আলুর আগাম ধসা রোগে অনুমোদিত ছত্রাকনাশক",
+    "content_en": "BARI Krishi Projukti Hatboi (Potato Early Blight Chemical Control): If disease spreads after removing lower infected leaves, spray Mancozeb (2 g per liter of water, PHI 7-10 days) or Chlorothalonil (2 g per liter of water, PHI 7-14 days) at 10-day intervals. Always wear gloves, mask, and protective clothing during spraying and wash hands thoroughly with soap afterward.",
+    "content_bn": "রোগ বাড়তে থাকলে অনুমোদিত ছত্রাকনাশক ম্যানকোজেব প্রতি লিটার পানিতে ২ গ্রাম অথবা ক্লোরোথ্যালোনিল প্রতি লিটার পানিতে ২ গ্রাম মিশিয়ে ১০ দিন পরপর স্প্রে করুন। স্প্রে করার পর কমপক্ষে ৭ থেকে ১৪ দিন বিরতি দিয়ে আলু তুলবেন। স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও শরীর ঢাকা পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে ভালোভাবে হাত-মুখ ধুয়ে নিন।",
+    "cultural_only": false,
+    "chemicals": [
+      {
+        "active_ingredient": "Mancozeb",
+        "bn_name": "ম্যানকোজেব",
+        "dose": "প্রতি লিটার পানিতে ২ গ্রাম",
+        "phi": "৭ থেকে ১০ দিন"
+      },
+      {
+        "active_ingredient": "Chlorothalonil",
+        "bn_name": "ক্লোরোথ্যালোনিল",
+        "dose": "প্রতি লিটার পানিতে ২ গ্রাম",
+        "phi": "৭ থেকে ১৪ দিন"
+      }
+    ],
+    "ppe_reminder_bn": "স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও সুরক্ষামূলক পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে হাত-মুখ ভালোভাবে ধুয়ে নিন।",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "bari_potato_late_blight_01",
+    "disease_id": "potato_late_blight",
+    "aliases": [
+      "Potato___Late_Blight",
+      "late blight",
+      "phytophthora infestans",
+      "আলুর নাবি ধসা",
+      "মড়ক"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "আলুর নাবি ধসা (মড়ক) — জরুরি সতর্কতা ও লক্ষণ",
+    "title_bn": "আলুর নাবি ধসা রোগের জরুরি সতর্কতা ও প্রাথমিক করণীয়",
+    "content_en": "BARI Krishi Projukti Hatboi (Potato Late Blight Urgent Warning - Phytophthora infestans): Urgent blight warning! In cool, foggy, and humid weather, water-soaked dark brown lesions appear on leaf tips/margins with white cottony fungal growth on the underside during morning dew. It can destroy the entire field within days. Immediately remove badly infected plants, stop irrigation, ensure drainage, and NEVER spray right before rain or in strong wind.",
+    "content_bn": "জরুরি সতর্কতা: কুয়াশাচ্ছন্ন, ঠান্ডা ও আর্দ্র আবহাওয়ায় আলুর নাবি ধসা বা মড়ক দ্রুত পুরো জমিতে ছড়িয়ে পড়তে পারে। পাতার কিনারায় পানিতে ভেজা বাদামি দাগ ও ভোরের শিশিরে পাতার নিচে সাদা তুলার মতো ছত্রাক দেখা যায়। আক্রান্ত গাছ দ্রুত সরিয়ে ফেলুন, সেচ বন্ধ রাখুন ও পানি নিষ্কাশন করুন। বৃষ্টির আগে বা ঝোড়ো বাতাসে কখনোই স্প্রে করবেন না।",
+    "cultural_only": false,
+    "chemicals": [],
+    "ppe_reminder_bn": "স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও সুরক্ষামূলক পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে হাত-মুখ ভালোভাবে ধুয়ে নিন।",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "bari_potato_late_blight_02",
+    "disease_id": "potato_late_blight",
+    "aliases": [
+      "Potato___Late_Blight",
+      "late blight",
+      "phytophthora infestans",
+      "আলুর নাবি ধসা",
+      "মড়ক"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "আলুর নাবি ধসা — প্রতিরোধক ও নিরাময়মূলক ছত্রাকনাশক",
+    "title_bn": "আলুর নাবি ধসা দমনে অনুমোদিত ছত্রাকনাশক ও সতর্কতা",
+    "content_en": "BARI Krishi Projukti Hatboi (Potato Late Blight Fungicide Control): For preventive protection spray Mancozeb (2 g per liter of water, PHI 7-10 days). When active blight symptoms appear, spray curative Metalaxyl + Mancozeb (2 g per liter of water, PHI 14 days) thoroughly covering leaf undersides at 7-day intervals. Do not spray if rain is forecast within 12 hours. Wear gloves, mask, and protective gear and wash hands with soap after spraying.",
+    "content_bn": "রোগ প্রতিরোধে ম্যানকোজেব প্রতি লিটার পানিতে ২ গ্রাম এবং রোগের প্রকোপ দেখা দিলে মেটালাক্সিল ও ম্যানকোজেব প্রতি লিটার পানিতে ২ গ্রাম মিশিয়ে পাতার নিচসহ ভালোভাবে ৭ দিন পরপর স্প্রে করুন। স্প্রে করার পর কমপক্ষে ৭ থেকে ১৪ দিন আলু তুলবেন না। বৃষ্টির সম্ভাবনা থাকলে স্প্রে থেকে বিরত থাকুন। স্প্রে করার সময় গ্লাভস ও মাস্ক পরুন এবং শেষে সাবান দিয়ে হাত ধুয়ে নিন।",
+    "cultural_only": false,
+    "chemicals": [
+      {
+        "active_ingredient": "Mancozeb",
+        "bn_name": "ম্যানকোজেব",
+        "dose": "প্রতি লিটার পানিতে ২ গ্রাম",
+        "phi": "৭ থেকে ১০ দিন"
+      },
+      {
+        "active_ingredient": "Metalaxyl + Mancozeb",
+        "bn_name": "মেটালাক্সিল ও ম্যানকোজেব",
+        "dose": "প্রতি লিটার পানিতে ২ গ্রাম",
+        "phi": "১৪ দিন"
+      }
+    ],
+    "ppe_reminder_bn": "স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও সুরক্ষামূলক পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে হাত-মুখ ভালোভাবে ধুয়ে নিন।",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "bari_potato_healthy_01",
+    "disease_id": "potato_healthy",
+    "aliases": [
+      "Potato___Healthy",
+      "healthy potato",
+      "সুস্থ আলু গাছ"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "সুস্থ আলু পাতা — কোনো স্প্রে নয়",
+    "title_bn": "আলু গাছ সুস্থ আছে, কোনো রাসায়নিক স্প্রের প্রয়োজন নেই",
+    "content_en": "BARI Krishi Projukti Hatboi (Healthy Potato Confirmation): The photographed potato leaf looks healthy with no blight or fungal lesions. NO fungicide or chemical spray is needed. Unnecessary spraying wastes money and harms beneficial organisms.",
+    "content_bn": "ছবি অনুযায়ী আপনার আলু গাছের পাতা সুস্থ আছে এবং এতে ধসা বা কোনো রোগের লক্ষণ দেখা যাচ্ছে না। তাই এখন কোনো ধরনের ছত্রাকনাশক বা রাসায়নিক স্প্রে করার প্রয়োজন নেই। অকারণে ওষুধ স্প্রে করলে খরচ বাড়ে এবং ফসলের উপকারী পরিবেশ নষ্ট হয়।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "bari_potato_healthy_02",
+    "disease_id": "potato_healthy",
+    "aliases": [
+      "Potato___Healthy",
+      "healthy potato",
+      "সুস্থ আলু গাছ"
+    ],
+    "crop_id": "potato",
+    "source_title": "BARI কৃষি প্রযুক্তি হাতবই (আলু ফসল)",
+    "section": "সুস্থ আলু ক্ষেতে প্রতিরোধমূলক পরিচর্যা",
+    "title_bn": "সুস্থ আলু ক্ষেতে নিয়মিত পর্যবেক্ষণ ও সুষম পরিচর্যা",
+    "content_en": "BARI Krishi Projukti Hatboi (Potato Preventive Care): Continue regular field scouting every 3-4 days, especially during foggy or cool mornings. Maintain balanced fertilizer application, timely earthing up along ridges, and light furrow irrigation without waterlogging.",
+    "content_bn": "জমি নিয়মিত ৩ থেকে ৪ দিন পরপর ঘুরে দেখুন, বিশেষ করে ঘন কুয়াশা ও ঠান্ডা আবহাওয়ায় পাতার নিচে লক্ষ্য রাখুন। গাছের গোড়ায় মাটি তুলে দিন, সুষম সার প্রয়োগ করুন এবং নালায় হালকা সেচ দিয়ে পানি বের হয়ে যাওয়ার ব্যবস্থা বজায় রাখুন।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_blast_01",
+    "disease_id": "rice_blast",
+    "aliases": [
+      "Rice___Leaf_Blast",
+      "rice leaf blast",
+      "neck blast",
+      "ধানের ব্লাস্ট"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "ধানের ব্লাস্ট রোগ — লক্ষণ, পানি ও নাইট্রোজেন ব্যবস্থাপনা",
+    "title_bn": "ধানের ব্লাস্ট রোগের লক্ষণ ও প্রাথমিক পরিচর্যা",
+    "content_en": "BRRI Adhunik Dhaner Chash (Rice Blast - Magnaporthe oryzae): Spindle/diamond-shaped grey-green spots with brown borders appear on leaves (leaf blast), and panicle necks rot and turn white/chaffy (neck blast). Cultural steps first: stop excess urea/nitrogen top-dressing immediately, maintain 2-3 cm standing water in the field, and remove heavily diseased plant debris.",
+    "content_bn": "ধানের পাতায় চোখের মতো বা ডিম্বাকৃতি ধূসর-সবুজ দাগ দেখা যায় যার কিনারা বাদামি ও মাঝখান সাদাটে থাকে; পরে শীষের গোড়া পচে শীষ সাদা ও চিটা হয়ে যায়। রোগ দেখা দিলে সঙ্গে সঙ্গে ইউরিয়া সার দেওয়া বন্ধ করুন, জমিতে ২ থেকে ৩ সেন্টিমিটার পানি ধরে রাখুন এবং আক্রান্ত আগাছা ও পাতা সরিয়ে ফেলুন।",
+    "cultural_only": false,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_blast_02",
+    "disease_id": "rice_blast",
+    "aliases": [
+      "Rice___Leaf_Blast",
+      "rice leaf blast",
+      "neck blast",
+      "ধানের ব্লাস্ট"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI Knowledge Bank (ধানের রোগ ব্যবস্থাপনা)",
+    "section": "ধানের ব্লাস্ট রোগ — অনুমোদিত ছত্রাকনাশক ও মাত্রা",
+    "title_bn": "ধানের ব্লাস্ট রোগে অনুমোদিত ছত্রাকনাশক ও প্রয়োগবিধি",
+    "content_en": "BRRI Knowledge Bank (Rice Blast Chemical Control): Spray Tricyclazole (0.6 g per liter of water, PHI 14-21 days) or Isoprothiolane (1.5 ml per liter of water, PHI 14 days) in the afternoon, especially before panicle emergence for neck blast protection, up to two sprays at 7-10 day intervals. Wear gloves and mask during spraying and wash hands with soap afterward.",
+    "content_bn": "ব্লাস্ট দমনে অনুমোদিত ছত্রাকনাশক ট্রাইসাইক্লাজল প্রতি লিটার পানিতে ০.৬ গ্রাম অথবা আইসোপ্রোথায়োলেন প্রতি লিটার পানিতে ১.৫ মিলি মিশিয়ে বিকেলের দিকে স্প্রে করুন, বিশেষ করে শীষ বের হওয়ার আগে প্রয়োগ করলে ভালো ফল পাওয়া যায়। স্প্রে করার পর কমপক্ষে ১৪ থেকে ২১ দিন বিরতি দিয়ে ধান কাটবেন। স্প্রে করার সময় গ্লাভস ও মাস্ক পরুন এবং কাজ শেষে সাবান দিয়ে হাত ধুয়ে নিন।",
+    "cultural_only": false,
+    "chemicals": [
+      {
+        "active_ingredient": "Tricyclazole",
+        "bn_name": "ট্রাইসাইক্লাজল",
+        "dose": "প্রতি লিটার পানিতে ০.৬ গ্রাম",
+        "phi": "১৪ থেকে ২১ দিন"
+      },
+      {
+        "active_ingredient": "Isoprothiolane",
+        "bn_name": "আইসোপ্রোথায়োলেন",
+        "dose": "প্রতি লিটার পানিতে ১.৫ মিলি",
+        "phi": "১৪ দিন"
+      }
+    ],
+    "ppe_reminder_bn": "স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও সুরক্ষামূলক পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে হাত-মুখ ভালোভাবে ধুয়ে নিন।",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_brown_spot_01",
+    "disease_id": "rice_brown_spot",
+    "aliases": [
+      "Rice___Brown_Spot",
+      "brown spot",
+      "bipolaris oryzae",
+      "ধানের বাদামি দাগ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "ধানের বাদামি দাগ রোগ — পুষ্টি ঘাটতি ও পটাশ সংশোধন",
+    "title_bn": "ধানের বাদামি দাগ রোগ ও মাটির পুষ্টি সংশোধন",
+    "content_en": "BRRI Adhunik Dhaner Chash (Rice Brown Spot - Bipolaris oryzae): Oval dark-brown sesame-seed-like spots with yellow halos appear on leaves. Brown spot is strongly linked to soil nutrient deficiency (especially potash/MoP and zinc) and water stress. Prioritize cultural and soil correction first: apply balanced potash (MoP) and zinc sulfate where deficient, avoid drought stress by keeping moist soil/light standing water, and treat seeds before future planting.",
+    "content_bn": "ধানের পাতায় তিলের দানার মতো ডিম্বাকৃতি গাঢ় বাদামি দাগ দেখা যায় এবং চারপাশে হালকা হলদে ভাব থাকে। এই রোগ মূলত জমিতে পটাশ ও জিংক সারের ঘাটতি এবং পানির অভাবের সাথে জড়িত। তাই প্রথমেই জমিতে সুষম মাত্রায় পটাশ সার ও প্রয়োজনে দস্তা সার প্রয়োগ করুন এবং জমিতে রস বা হালকা পানি বজায় রাখুন।",
+    "cultural_only": false,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_brown_spot_02",
+    "disease_id": "rice_brown_spot",
+    "aliases": [
+      "Rice___Brown_Spot",
+      "brown spot",
+      "bipolaris oryzae",
+      "ধানের বাদামি দাগ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI Knowledge Bank (ধানের রোগ ব্যবস্থাপনা)",
+    "section": "ধানের বাদামি দাগ রোগ — অনুমোদিত ছত্রাকনাশক",
+    "title_bn": "তীব্র সংক্রমণে বাদামি দাগ রোগের অনুমোদিত ছত্রাকনাশক",
+    "content_en": "BRRI Knowledge Bank (Rice Brown Spot Chemical Control): Only if infection is severe after addressing soil potash/irrigation, spray Propiconazole (1 ml per liter of water, PHI 14 days) or Mancozeb (2 g per liter of water, PHI 14 days). Wear gloves and mask during application and wash hands thoroughly with soap afterward.",
+    "content_bn": "মাটির সার ও পানি সংশোধনের পরও রোগের প্রকোপ বেশি থাকলে প্রোপিকোনাজল প্রতি লিটার পানিতে ১ মিলি অথবা ম্যানকোজেব প্রতি লিটার পানিতে ২ গ্রাম মিশিয়ে স্প্রে করতে পারেন। স্প্রে করার পর কমপক্ষে ১৪ দিন বিরতি দিয়ে ধান কাটবেন। স্প্রে করার সময় গ্লাভস ও মাস্ক পরুন এবং কাজ শেষে সাবান দিয়ে হাত ধুয়ে নিন।",
+    "cultural_only": false,
+    "chemicals": [
+      {
+        "active_ingredient": "Propiconazole",
+        "bn_name": "প্রোপিকোনাজল",
+        "dose": "প্রতি লিটার পানিতে ১ মিলি",
+        "phi": "১৪ দিন"
+      },
+      {
+        "active_ingredient": "Mancozeb",
+        "bn_name": "ম্যানকোজেব",
+        "dose": "প্রতি লিটার পানিতে ২ গ্রাম",
+        "phi": "১৪ দিন"
+      }
+    ],
+    "ppe_reminder_bn": "স্প্রে করার সময় হাতে গ্লাভস, মুখে মাস্ক ও সুরক্ষামূলক পোশাক পরুন এবং কাজ শেষে সাবান দিয়ে হাত-মুখ ভালোভাবে ধুয়ে নিন।",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_blb_01",
+    "disease_id": "rice_bacterial_leaf_blight",
+    "aliases": [
+      "rice_bacterial_blight",
+      "BLB",
+      "bacterial leaf blight",
+      "xanthomonas oryzae",
+      "ধানের পাতা পোড়া রোগ",
+      "ব্যাকটেরিয়াল ব্লাইট"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "ধানের ব্যাকটেরিয়াল লিফ ব্লাইট (পাতা পোড়া) — ছত্রাকনাশক কাজ করে না",
+    "title_bn": "এটি ব্যাকটেরিয়াজনিত রোগ, ছত্রাকনাশক স্প্রে কাজ করবে না",
+    "content_en": "BRRI Adhunik Dhaner Chash (Rice Bacterial Leaf Blight / BLB - Xanthomonas oryzae pv. oryzae): EXPLICIT WARNING — this is a BACTERIAL disease, NOT fungal, so fungicides do NOT cure or stop it. Symptoms include pale yellow-to-straw wavy streaks starting from leaf margins/tips and milky bacterial ooze droplets in morning dew.",
+    "content_bn": "জরুরি তথ্য: ধানের পাতা পোড়া বা ব্যাকটেরিয়াল লিফ ব্লাইট একটি ব্যাকটেরিয়াজনিত রোগ, তাই কোনো ছত্রাকনাশক স্প্রে করলে এই রোগ সারবে না। পাতার ডগা ও কিনারা থেকে ঢেউ খেলানো হলুদাভ-সাদা দাগ শুকিয়ে খড়ের মতো হয়ে যায় এবং ভোরের শিশিরে দুধের মতো ফোঁটা দেখা যায়।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": true
+  },
+  {
+    "chunk_id": "brri_rice_blb_02",
+    "disease_id": "rice_bacterial_leaf_blight",
+    "aliases": [
+      "rice_bacterial_blight",
+      "BLB",
+      "bacterial leaf blight",
+      "xanthomonas oryzae",
+      "ধানের পাতা পোড়া রোগ",
+      "ব্যাকটেরিয়াল ব্লাইট"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI Knowledge Bank (ধানের রোগ ব্যবস্থাপনা)",
+    "section": "ধানের পাতা পোড়া রোগ — পানি নিষ্কাশন, ইউরিয়া বন্ধ ও পটাশ প্রয়োগ",
+    "title_bn": "পাতা পোড়া রোগ দমনে পানি ও সার ব্যবস্থাপনা এবং কৃষি কর্মকর্তার পরামর্শ",
+    "content_en": "BRRI Knowledge Bank (BLB Cultural Management): Drain standing water and dry the field for 7-10 days. Immediately stop excess urea/nitrogen fertilizer and apply 5 kg/bigha of potash (MoP) top-dressing to strengthen plants. Prevent water flowing from infected plots to healthy plots. Consult the local Sub-Assistant Agriculture Officer (SAAO) for field confirmation.",
+    "content_bn": "কোনো ছত্রাকনাশক না ছিটিয়ে প্রথমেই জমির পানি সরিয়ে ৭ থেকে ১০ দিন জমি শুকিয়ে নিন। অতিরিক্ত ইউরিয়া সার দেওয়া একেবারে বন্ধ করুন এবং বিঘাপ্রতি ৫ কেজি পটাশ সার উপরি প্রয়োগ করুন। আক্রান্ত জমির পানি যেন সুস্থ জমিতে না যায় সেদিকে খেয়াল রাখুন এবং স্থানীয় উপ-সহকারী কৃষি কর্মকর্তার পরামর্শ নিন।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": true
+  },
+  {
+    "chunk_id": "brri_rice_tungro_01",
+    "disease_id": "rice_tungro",
+    "aliases": [
+      "tungro",
+      "rice tungro virus",
+      "green leafhopper",
+      "টুংরো রোগ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "ধানের টুংরো রোগ — ভাইরাসজনিত রোগ, ছত্রাকনাশক কাজ করে না",
+    "title_bn": "টুংরো একটি ভাইরাস রোগ, ছত্রাকনাশক এতে কোনো কাজ করে না",
+    "content_en": "BRRI Adhunik Dhaner Chash (Rice Tungro Virus): EXPLICIT WARNING — Tungro is a VIRAL disease transmitted by the green leafhopper (GLH) vector; fungicides do NOT cure or prevent it. Leaves turn yellow to orange starting from the tips, plants become stunted with fewer tillers, and panicles emerge poorly.",
+    "content_bn": "জরুরি তথ্য: ধানের টুংরো একটি ভাইরাসজনিত রোগ, যা সবুজ পাতাফড়িং পোকার মাধ্যমে ছড়ায়। তাই কোনো ছত্রাকনাশক বা ফাঙ্গিসাইড স্প্রে করলে এই রোগ সারবে না। আক্রান্ত গাছের পাতা আগা থেকে হলুদ-কমলা হয়ে যায়, গাছ খাটো থাকে এবং কুশি ও শীষ কম বের হয়।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": true
+  },
+  {
+    "chunk_id": "brri_rice_tungro_02",
+    "disease_id": "rice_tungro",
+    "aliases": [
+      "tungro",
+      "rice tungro virus",
+      "green leafhopper",
+      "টুংরো রোগ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI Knowledge Bank (ধানের রোগ ব্যবস্থাপনা)",
+    "section": "ধানের টুংরো রোগ — আক্রান্ত গোছা অপসারণ ও বাহক পোকা দমন",
+    "title_bn": "আক্রান্ত গোছা তুলে ফেলা, সবুজ পাতাফড়িং নিয়ন্ত্রণ ও কৃষি কর্মকর্তার পরামর্শ",
+    "content_en": "BRRI Knowledge Bank (Tungro Roguing & Vector Control): Immediately rogue (uproot and bury) infected rice hills to stop virus spread. Control the green leafhopper (GLH) vector per BRRI guidance using light traps, hand-net sweeping, and keeping bunds weed-free. Consult a Sub-Assistant Agriculture Officer (SAAO) before deciding on any vector-control measure.",
+    "content_bn": "রোগ ছড়ানো বন্ধ করতে আক্রান্ত গোছাগুলো দ্রুত তুলে মাটিতে পুঁতে ফেলুন। বাহক পোকা সবুজ পাতাফড়িং দমনে জমির আইল আগাছামুক্ত রাখুন এবং আলোক ফাঁদ বা হাতজাল ব্যবহার করুন। পরবর্তী সঠিক ব্যবস্থা নেওয়ার আগে অবশ্যই স্থানীয় উপ-সহকারী কৃষি কর্মকর্তার পরামর্শ নিন।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": true
+  },
+  {
+    "chunk_id": "brri_rice_healthy_01",
+    "disease_id": "rice_healthy",
+    "aliases": [
+      "Rice___Healthy",
+      "healthy rice",
+      "সুস্থ ধান গাছ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "সুস্থ ধান পাতা — কোনো স্প্রে নয়",
+    "title_bn": "ধান গাছ সুস্থ আছে, কোনো রাসায়নিক স্প্রের প্রয়োজন নেই",
+    "content_en": "BRRI Adhunik Dhaner Chash (Healthy Rice Confirmation): The photographed rice leaf is healthy with no sign of blast, brown spot, BLB, or tungro. NO fungicide or chemical spray is needed.",
+    "content_bn": "ছবি অনুযায়ী আপনার ধান গাছের পাতা সুস্থ আছে এবং কোনো রোগের লক্ষণ দেখা যাচ্ছে না। তাই এখন কোনো ছত্রাকনাশক বা কীটনাশক স্প্রে করার প্রয়োজন নেই। অপ্রয়োজনীয় স্প্রে খরচ বাড়ায় এবং জমির উপকারী পোকা নষ্ট করে।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  },
+  {
+    "chunk_id": "brri_rice_healthy_02",
+    "disease_id": "rice_healthy",
+    "aliases": [
+      "Rice___Healthy",
+      "healthy rice",
+      "সুস্থ ধান গাছ"
+    ],
+    "crop_id": "rice",
+    "source_title": "BRRI আধুনিক ধানের চাষ",
+    "section": "সুস্থ ধান ক্ষেতে নিয়মিত পর্যবেক্ষণ ও পরিচর্যা",
+    "title_bn": "ধান ক্ষেতের নিয়মিত পর্যবেক্ষণ ও সুষম পরিচর্যা",
+    "content_en": "BRRI Adhunik Dhaner Chash (Rice Routine Field Monitoring): Inspect the field weekly, keep bunds free from weeds, apply balanced fertilizers using Leaf Color Chart (LCC) for urea, and follow Alternate Wetting and Drying (AWD) irrigation.",
+    "content_bn": "সপ্তাহে অন্তত একবার জমি ঘুরে পর্যবেক্ষণ করুন, আইলের আগাছা পরিষ্কার রাখুন এবং জমিতে পরিমিত পানি ধরে রাখুন। ইউরিয়া সার অতিরিক্ত না দিয়ে সুষম মাত্রায় প্রয়োগ করুন।",
+    "cultural_only": true,
+    "chemicals": [],
+    "ppe_reminder_bn": "",
+    "refer_to_officer": false
+  }
+]

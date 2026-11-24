@@ -1,0 +1,79 @@
+# Environment files & secrets
+.env
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build output
+dist/
+dist-ssr/
+build/
+*.tsbuildinfo
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Test / coverage & tool caches
+coverage/
+.eslintcache
+.cache/
+.vite/
+*.local
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+apps/api/.venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# SQLite runtime & local storage
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+apps/api/storage/
+
+# Large model artifacts & local caches
+*.onnx
+*.onnx.data
+*.pt
+*.pth
+*.bin
+*.safetensors
+apps/api/models/
+foshollens_model.zip
+
+# The default vision checkpoint (EfficientNet-B0, 16 MB) is committed so a fresh
+# clone runs with vision instead of silently reporting every photo as
+# unidentified. The directory itself has to be re-included as well: git does not
+# descend into an ignored directory, so a bare `!file` rule would not work.
+# Everything else in models/ — experimental exports, other checkpoints — stays out.
+!apps/api/models/
+!apps/api/models/foshollens_leaf.onnx
+
+# Hackathon submission form: contains teammates' personal contact details.
+# Kept locally; must not land in a public repo.
+docs/fosollesns.pdf
+
+# IDE / OS
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
