@@ -4,6 +4,8 @@
 
 Built for **CoU AI Hackathon 2026**.
 
+**Live App:** [https://foshol-lens.vercel.app/](https://foshol-lens.vercel.app/)
+
 ---
 
 ## Team Tesseract
@@ -28,6 +30,26 @@ Smallholder rice (*ধান*) and potato (*আলু*) farmers in Bangladesh fa
 3. **BARI/BRRI Grounded RAG Prescription Engine** (`16` curated chunks across all 8 leaf classes with precomputed Gemini embeddings + offline TF-IDF fallback), enforcing cultural-only guards for bacterial/viral diseases, no-spray healthy guidance, pre-harvest intervals (PHI), PPE reminders, and SAAO referrals.
 4. **48-Hour Color-Coded Spray Timeline & GPS Auto-District** using Open-Meteo hourly forecasts across all 64 districts of Bangladesh (with one-tap Haversine GPS district matching), deterministically computing safe (`green`), caution (`amber`), and wash-off/drift risk (`red`) hours plus a pure-Bangla safest daylight spray window.
 5. **Bangla Advisory Synthesis & Local Voice Playback** via Google Gemini Flash (with deterministic `TemplateWriter` fallback) and local ONNX Bangla TTS (`sulabhkatiyar/indic-tiny-tts-bengali` + `ffmpeg` -> MP3 by default for iOS Safari/Android/Desktop compatibility, with WAV fallback when `ffmpeg` is absent).
+
+---
+
+## Final Day Challenge (CoU AI Hackathon 2026)
+
+**Team 24 — Tesseract | Direction:** *Location-aware advisory via voice* — **Both final-day challenges are implemented and verified.**
+
+### Challenge 1 — Voice-Named Village/Plot Forecast Grid & Extension Advice *(Completed)*
+> *"Accept a voice question naming the farmer's own village or plot, and use it to pick the forecast grid and extension advice."*
+
+- **Voice & Text Context Extraction (`apps/api/app/llm/audio_input.py`):** `extract_question_context()` extracts the Bangla transcript, spoken village/upazila/district (`spoken_place_bn`, `spoken_place_en`, `spoken_district_en`), plot hint (e.g., low-lying field / *নিচু জমি*), and mentioned crop via Gemini Flash structured JSON, with `extract_question_context_offline()` Bangla keyword fallback when unconfigured.
+- **3-Layer Bangladesh Geocoding & Disambiguation (`apps/api/app/grounding/geocoder.py`):** `resolve_precise_location()` resolves spoken rural locations through (1) Open-Meteo Geocoding API (GeoNames, `BD`), (2) OpenStreetMap Nominatim fallback for rural villages/unions absent in GeoNames, and (3) an offline 64-district + rural upazila table. Duplicate place names (e.g., Sherpur district vs. Sherpur upazila in Bogura) are disambiguated using spoken district context and GPS proximity while surfacing alternate `locationCandidates`.
+- **Forecast Grid Selection, Extension Office Guidance & Quick-Switch UI (`apps/api/app/grounding/weather.py`, `apps/api/app/routes.py`, `apps/frontend/src/components/WeatherCard.tsx`):** Feeds geocoded village/plot coordinates into Open-Meteo (`locationSource: "voice"`, `gridLatitude`, `gridLongitude`) overriding district/GPS defaults, formats location-specific Bangla extension advice (`extensionOfficeBn` via `build_extension_office_bn()` pointing to the local Upazila Agriculture Office & SAAO), passes the resolved place and plot hint into the Bangla advisory writer, and lets the farmer switch between disambiguation candidates live via `GET /api/v1/weather`.
+
+### Challenge 2 — Strict BARI/BRRI Grounding on Photo vs. Question Crop Mismatch *(Completed)*
+> *"Hold the advisory to the retrieved BARI/BRRI text when the leaf photo and the spoken question point at two different crops."*
+
+- **Unmasked Cross-Crop Photo Detection (`apps/api/app/vision/classifier.py`, `apps/api/app/jobs/pipeline.py`):** Evaluates unmasked 8-class EfficientNet-B0 softmax probabilities (`_decide()`) so even if a farmer uploads a potato leaf while `rice` is selected and asks a rice question (or vice versa), the pipeline infers the true crop in the photo (`inferred_photo_crop`, `crop_override_detected`), records `cropMismatch` (`photoCropBn`, `questionCropBn`, Bangla `messageBn`), and sets `referToOfficer=True`.
+- **Strict Photo-Crop RAG Locking & Cross-Crop Chemical Blocking (`apps/api/app/jobs/pipeline.py`, `apps/api/app/llm/writer.py`):** Locks BARI/BRRI RAG retrieval exclusively to the photographed crop's chunks (zero cross-crop passages enter context) and enforces `validate_narrative()` chemical validation with retry and offline template fallback so pesticides from the spoken crop are never leaked into treatment steps or Bangla voice narration.
+- **Mismatch Alert UI & Automated Verification (`apps/frontend/src/components/AnalysisResult.tsx`, `apps/api/tests/test_final_challenges.py`):** Displays a dedicated Bangla mismatch banner (*"ফসলের অমিল শনাক্ত হয়েছে"*) showing both the photographed crop and asked crop alongside the grounded BARI/BRRI guidance, verified by **12 passing tests** in `apps/api/tests/test_final_challenges.py`.
 
 ---
 
@@ -70,7 +92,7 @@ The backend runs a 4-stage asynchronous job pipeline (`reading -> grounding -> w
   - Shipped EfficientNet-B0 ONNX checkpoint (`apps/api/models/foshollens_leaf.onnx`, 8 rice & potato classes)
 - **Embeddings & LLM / Audio AI:** Google Gemini (`google-genai` SDK) — `gemini-embedding-001` for precomputed RAG embeddings and `gemini-3.5-flash-lite` (with fallback chain) for Bangla voice transcription and advisory generation
 - **Text-to-Speech:** [`sulabhkatiyar/indic-tiny-tts-bengali`](https://huggingface.co/sulabhkatiyar/indic-tiny-tts-bengali) (local ONNX, CPU) + `ffmpeg` -> MP3 (default) / Opus / WAV fallback
-- **Weather API:** [Open-Meteo Forecast API](https://open-meteo.com/) (key-free, non-commercial use)
+- **Weather & Geocoding APIs:** [Open-Meteo Forecast & Geocoding API](https://open-meteo.com/) (key-free, non-commercial use) + [OpenStreetMap Nominatim](https://nominatim.openstreetmap.org/) fallback for rural Bangladesh village/union resolution
 - **Datasets & Agricultural Knowledge Sources:**
   - **Saon110 Bangladesh multi-crop plant disease dataset** (Hugging Face, CC BY-NC-SA 4.0) — the 5 rice classes
   - **PlantVillage** (Hughes & Salathé, 2015; Mohanty et al., 2016) — potato early blight, late blight, healthy (lab photos)
@@ -222,7 +244,7 @@ foshollens/
 │   │   ├── pyproject.toml
 │   │   ├── app/
 │   │   │   ├── main.py                # FastAPI app, CORS, /health alias, lifespan startup checks
-│   │   │   ├── routes.py              # /api/v1 health, districts, crops, analyses, image, audio
+│   │   │   ├── routes.py              # /api/v1 health, districts, weather, crops, analyses, image, audio, tts
 │   │   │   ├── contracts.py           # Pydantic API contracts (source of truth)
 │   │   │   ├── config.py              # Environment settings (.env & apps/api/.env)
 │   │   │   ├── store.py               # SQLite (WAL) persistence
@@ -230,6 +252,7 @@ foshollens/
 │   │   │   ├── vision/                # ONNX leaf classifier (EfficientNet-B0)
 │   │   │   ├── grounding/
 │   │   │   │   ├── rag.py             # Hybrid vector + offline TF-IDF BARI/BRRI retriever
+│   │   │   │   ├── geocoder.py        # 3-layer Bangladesh village/plot geocoder with disambiguation
 │   │   │   │   ├── knowledge_base.py  # Curated crop/disease KB & aliases
 │   │   │   │   ├── weather.py         # Open-Meteo 12h verdict + 48h timeline + wash-off lookahead
 │   │   │   │   └── districts.py       # 64 Bangladesh districts with coordinates
@@ -244,7 +267,7 @@ foshollens/
 │   │   │   └── foshollens_leaf.onnx   # Committed 8-class EfficientNet-B0 ONNX checkpoint (16 MB)
 │   │   ├── scripts/
 │   │   │   └── build_rag_index.py     # Rebuilds bari_brri_index.json via gemini-embedding-001
-│   │   └── tests/                     # pytest tests (API, RAG, voice, weather, vision, TTS, CORS)
+│   │   └── tests/                     # pytest tests (API, final challenges, RAG, voice, weather, vision, TTS, CORS)
 │   └── frontend/                      # @foshol-lens/frontend (React 19 + TypeScript + Vite PWA)
 │       ├── vercel.json                # Standalone SPA rewrite config
 │       ├── index.html
@@ -364,7 +387,7 @@ npm run typecheck
 | Item | Value |
 | --- | --- |
 | GitHub repository | This repository (public) |
-| Live deployment link | _[To be added after deployment]_ |
+| Live deployment link | [https://foshol-lens.vercel.app/](https://foshol-lens.vercel.app/) |
 | Demo video (max 3 minutes) | _[To be added before submission]_ |
 | Test login credentials | Not applicable — the app has no login or user accounts |
 
@@ -390,4 +413,4 @@ Required README content, mapped to where it lives in this document:
 | Test login credentials (if the app has a login) | 12.3 | [Links](#links) — not applicable |
 | `.env.example`, no committed keys | 10.2 | [`.env.example`](.env.example), [Local Setup](#local-setup) |
 
-**Outstanding before the 24 Nov deadline:** replace the live deployment link and demo video placeholders in [Links](#links) with public URLs. A broken or private link counts as missing (Rule 12).
+**Note before final submission:** the live deployment link ([https://foshol-lens.vercel.app/](https://foshol-lens.vercel.app/)) is active; replace the demo video placeholder in [Links](#links) with a public URL once uploaded. A broken or private link counts as missing (Rule 12).
